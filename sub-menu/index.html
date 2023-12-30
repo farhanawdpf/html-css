@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>submenu</title>
+    <style> 
+        .manu-bar{ 
+            background-color: aquamarine;
+            padding: 1% 8%;
+            text-align: center;
+        }
+        .manu-bar a{ 
+           color: rgb(4, 25, 18);
+            padding: 10px 20px;
+            text-align: center;
+            text-decoration: none;
+            cursor: pointer;
+        }
+
+        .container{ 
+           display: inline;
+           position: relative;
+        }
+        .content a{ 
+           display: block;
+        }
+        .content a:hover{ 
+           background-color: blue;
+           color: aliceblue;
+        }
+        .content{ 
+           position: absolute;
+           top: 30px;
+           right: 0px;
+           display: none;
+           background-color: aquamarine;
+           text-align: left;
+        
+        }
+        .container:hover .content{ 
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <div class="manu-bar">
+        <a href="#">Home</a> 
+        <a href="#">Contact Us</a> 
+       <div class="container"> 
+            <a href="#">tutorial</a> 
+            <div class="content"> 
+                <a href="#">services</a> 
+                <a href="#">services-1</a> 
+                <a href="#">services-2</a> 
+            </div>
+       </div>
+    
+
+    </div>
+</body>
+</html>
