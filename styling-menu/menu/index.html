@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .container {
+        width: 100%;
+        background-color: aqua;
+        overflow: hidden;
+      }
+      .logo {
+        width: 20%;
+        float: left;
+      }
+      .menu {
+        width: 50%;
+        float: left;
+      }
+      .search {
+        width: 30%;
+        float: left;
+      }
+      #menu2 {
+        list-style-type: none;
+        /* margin: 16px 0 0 0; */
+        /* display: block; */
+      }
+
+      #menu2 li {
+        margin: 0;
+        float: left;
+        text-align: center;
+      }
+      #menu2 li a {
+        text-decoration: none;
+        color: rgb(203, 14, 14);
+        padding: 10px;
+        display: inline-block;
+      }
+      #menu2 li a:hover {
+        background-color: brown;
+        color: beige;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="logo">logo part</div>
+      <div class="menu"></div>
+      <div class="search">
+        <input type="search" placeholder="search" /> <button>search</button>
+      </div>
+    </div>
+  </body>
+</html>
