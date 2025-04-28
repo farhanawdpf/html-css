@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>grid-layout</title>
+    <style> 
+.grid-container{ 
+    background-color: blanchedalmond;
+    padding: 10px;
+    display: grid;
+    grid-template-columns: 200px auto auto;
+    grid-template-rows: 200px 100px 200px;
+    text-align: center;
+    /* gap: 10px; */
+    grid-row-gap: 10px;
+    grid-column-gap: 15px;
+    /* gap: 10px 15px; */
+    /* justify-content: center; */
+}
+.grid-container>div{ 
+    border: 2px solid red;
+
+}
+.box1{ 
+    /* grid-column-start: 1;
+    grid-column-end: 3; */
+    /* grid-column: 1 / span 2; */
+    grid-row: 1 / span 3;
+    float: left;
+}
+.box2{ 
+    grid-row: 1/ span 3;
+    grid-column: 1/span 3;
+}
+.box3{ 
+    grid-row: 1/ span 3;
+    /* grid-column: 1/span 2; */
+}
+.box4{ 
+    grid-column: 1/ span 3;
+}
+    </style>
+</head>
+<body>
+    <div class="grid-container"> 
+        <div class="box1">Header</div><br>
+        <div class="box2">Main</div>
+        <div class="box3">sidebar</div>
+        <div class="box4">footer</div>
+        <!-- <div class="box5">5</div>
+        <div class="box6">6</div>
+        <div class="box7">7</div>
+        <div class="box8">8</div>
+        <div class="box9">9</div>
+        <div class="box10">10</div> -->
+    </div>
+</body>
+</html>
