@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style> 
+    .menu-var{ 
+        background-color: burlywood;
+        text-align: center;
+    }
+    .menu-var a{ 
+        text-decoration: none;
+        padding: 10px;
+    }
+    .dropdown-main{ 
+        display: inline;
+        position: relative;
+    }
+    .dropdown-menu{ 
+        position: absolute;
+        top: 25px;
+        width: 150px;
+        right: 0;
+        background-color: brown;
+        text-align: left;
+        display: none;
+    }
+    .dropdown-menu a{ 
+        display: block;
+        
+    }
+    .dropdown-menu a:hover{ 
+
+        background-color: aquamarine;
+        color: cornflowerblue;
+    }
+
+    .dropdown-main:hover .dropdown-menu { 
+        display: block;
+    }
+    </style>
+</head>
+<body>
+    <div class="menu-var"> 
+        <a href="#">Home</a>
+        <a href="#">About Us</a>
+        <a href="#">Contact Us</a>
+        <div class="dropdown-main"> 
+            <a href="#">Items</a>
+            <!-- dropdown content -->
+             <div class="dropdown-menu"> 
+                <a href="#">Sub Item 1</a>
+                <a href="#">Sub Item 2</a>
+                <a href="#">Sub Item 3</a>
+                <a href="#">Sub Item 4</a>
+             </div>
+
+        </div>
+
+    </div>
+</body>
+</html>

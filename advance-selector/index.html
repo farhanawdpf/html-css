@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+         a:visited{ 
+            background-color: rgb(148, 175, 116);
+            color: rgb(211, 200, 202);
+         }
+         li:last-child{ 
+            color: crimson;
+         }
+         li::first-line{ 
+font-size: 200px;
+         }
+         body:after{ 
+            content: "Element";
+            background-image: url(p.png);
+            background-size: 140px;
+            background: no-repeat;
+         }
+         #bg{ 
+            background-color: blue;
+         }
+         .color{ 
+            background-color: blueviolet;
+         }
+         .cl{ 
+            background-color: chartreuse;
+         }
+         p{ 
+            background-color: coral !important;
+         }
+
+    </style>
+</head>
+<body>
+   <p id="bg">background color blue </p>
+   <p class="color">background blueviolet </p>
+   <p class="cl">background color chartreuse</p>
+   <p>background color coral</p>
+   <p>background color coral</p>
+</body>
+</html>

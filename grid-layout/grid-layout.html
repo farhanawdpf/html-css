@@ -3,57 +3,82 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>grid-layout</title>
+    <title>Document</title>
     <style> 
-.grid-container{ 
-    background-color: blanchedalmond;
-    padding: 10px;
-    display: grid;
-    grid-template-columns: 200px auto auto;
-    grid-template-rows: 200px 100px 200px;
-    text-align: center;
-    /* gap: 10px; */
-    grid-row-gap: 10px;
-    grid-column-gap: 15px;
-    /* gap: 10px 15px; */
-    /* justify-content: center; */
+body{ 
+    margin: 0;
 }
-.grid-container>div{ 
-    border: 2px solid red;
+    .container{ 
+        display: grid;
+        grid-template-columns: auto auto auto auto auto;
+        background-color: antiquewhite;
 
-}
-.box1{ 
-    /* grid-column-start: 1;
-    grid-column-end: 3; */
-    /* grid-column: 1 / span 2; */
-    grid-row: 1 / span 3;
-    float: left;
-}
-.box2{ 
-    grid-row: 1/ span 3;
-    grid-column: 1/span 3;
-}
-.box3{ 
-    grid-row: 1/ span 3;
-    /* grid-column: 1/span 2; */
-}
-.box4{ 
-    grid-column: 1/ span 3;
-}
+    }
+    .container>div{ 
+        border: 2px solid blue;
+    }
+    .header{ 
+       grid-column: 1/ 6;
+    }
+     .sidebar{ 
+        grid-column: 1 / 2;
+    }
+    .main{ 
+        grid-column: 2 / 5;
+    }
+    .aside{ 
+        grid-column: 5 / 6;
+    }
+    .footer{ 
+        grid-column: 1 /6;
+    }
+    .row{
+        width: 100%;
+    }
+    .col{ 
+        width: 50%;
+        float: left;
+    }
+    .col2{ 
+        width: 20%;
+    }
     </style>
 </head>
 <body>
-    <div class="grid-container"> 
-        <div class="box1">Header</div><br>
-        <div class="box2">Main</div>
-        <div class="box3">sidebar</div>
-        <div class="box4">footer</div>
-        <!-- <div class="box5">5</div>
-        <div class="box6">6</div>
-        <div class="box7">7</div>
-        <div class="box8">8</div>
-        <div class="box9">9</div>
-        <div class="box10">10</div> -->
+    <h1>Grid layout</h1>
+    <div class="container"> 
+        <div class="header"> 
+            <h1>1</h1>
+        </div>
+        <div class="sidebar"> 
+            <h1>sidebar</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore officia voluptatum accusantium dolores eaque deleniti! Illo non nisi illum aspernatur consectetur asperiores, molestias odit quos voluptatum nemo quas magnam vero alias perspiciatis error fugit sed pariatur, quibusdam at? Nulla explicabo itaque tenetur numquam reiciendis sunt sit ipsum accusantium magnam libero, tempore at minima cum unde iste ad adipisci? Vero consequatur, eligendi amet sunt asperiores quia culpa nulla voluptate consectetur neque nesciunt dignissimos in commodi impedit corrupti quos, mollitia accusantium autem necessitatibus voluptatibus dolor molestiae! Quam et assumenda saepe, esse tempore explicabo at tenetur consectetur. Nobis unde aut, quae laboriosam deleniti culpa ipsam nisi aperiam cum molestiae laudantium ullam perspiciatis libero, corrupti repudiandae! Quae cumque dolorem eum sed accusantium qui dignissimos quod fugit sapiente neque nostrum id et dolore, reprehenderit repudiandae similique nihil autem minima. Laboriosam delectus qui quia nemo magnam iste voluptatem aperiam molestiae vitae? Odio facere dignissimos odit porro corporis nulla similique praesentium ratione doloribus, suscipit doloremque error deserunt cumque quis, veritatis vitae necessitatibus voluptatem quod alias illum sint beatae tempore distinctio dolorum. Ipsum esse fugit commodi, laudantium iste, sunt a consequatur odit saepe sit tum repudiandae. Quidem, exercitationem accusamus eligendi voluptatum voluptatem facilis dignissimos provident porro dolorem ullam ipsa magni expedita veniam veritatis numquam mollitia, at, optio sapiente harum labore? Ullam eos error id cum cumque doloremque voluptates mollitia officiis! Itaque laboriosam illo voluptatum error fugiat molestiae officiis in molestias reiciendis? Ad qui optio itaque possimus numquam, amet provident ullam animi facere fugit, tempora debitis dolorem dolorum sit officia atque, corrupti ipsa!</p>
+        </div>
+        <div class="main"> 
+           <div class="row"> 
+                <h1>slider</h1>
+           </div>
+           <div class="row"> 
+            <div class="col"> 
+ <h1>col 1</h1>
+            </div>
+             <div class="col2"> 
+                 <h1>col 1</h1>
+
+            </div>
+           </div>
+        </div>
+        <div class="aside"> 
+            <h1>aside</h1>
+            <p> 
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi voluptatibus officiis omnis iusto? Temporibus eaque inventore magni aperiam. Libero, suscipit a. Alias minima tempora saepe quo possimus porro ea soluta. 
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odio sint sit pariatur neque animi quis, autem repellat impedit maxime ex, quidem amet? Vero ullam consectetur dolor voluptate modi quod, facere non corrupti. Quasi fugiat at error aut quidem maxime repellat rerum natus, magnam eaque ipsam enim ipsum quis facilis id illo consequatur impedit mollitia delectus perspiciatis alias. Voluptatum debitis, ipsum nam doloremque cum consequuntur commodi tempora id suscipit adipisci excepturi dolor qui at quae cupiditate explicabo, in, quibusdam recusandae facilis. Esse ab nemo quaerat sed quos illo laudantium adipisci ut aspernatur quo similique, delectus cupiditate sint vel facilis accusamus, officiis eligendi tenetur temporibus expedita, voluptatibus nostrum porro. Voluptate repudiandae quisquam adipisci in neque eius, eum inventore amet esse sint dolor non dolorum modi ullam doloremque eos unde qui! Dolorem consequuntur nihil rerum aperiam quod voluptates quia et. Temporibus distinctio deleniti vitae sed delectus ad maiores officia expedita tenetur. Cupiditate, similique corporis! Tempore, ratione accusamus rerum quam molestias ipsa harum a. Nihil ipsam ut quod impedit atque voluptatibus facilis velit error reprehenderit placeat modi quam similique, neque perferendis repudiandae dolor tempora omnis nostrum earum, id asperiores officiis harum. Vitae, eligendi. Quos fuga perspiciatis consectetur minima commodi sint quas cum. Atque, dolor.
+            </p>
+        </div>
+        <div class="footer"> 
+            <h1>ghjfgjhf2</h1>
+        </div>
+    
     </div>
 </body>
 </html>

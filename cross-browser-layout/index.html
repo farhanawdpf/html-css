@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+        #container{ 
+            width: 100%;
+            max-width: 1500px;
+            min-width: 500px;
+            margin: 0 auto;
+            background-color: antiquewhite;
+        }
+      .header {
+        background-color: chartreuse;
+      }
+      .sidebar {
+        width: 33%;
+        padding: 10px;
+        float: left;
+        background-color: burlywood;
+      }
+      .main {
+        margin-left: 36%;
+        margin-left: -moz-calc(33%+50px);
+        margin-left: -webkit-calc(33%+15px);
+        background-color: -moz-#fff;
+        background-color: -webkit-#fff;
+        padding: 10px 15px;
+      }
+      #footer {
+      }
+    </style>
+  </head>
+  <body>
+    <div id="container">
+      <div class="header">This is header</div>
+      <div class="sidebar">sidebar</div>
+      <div class="main">This is main section</div>
+      <div id="footer">This is footer section</div>
+    </div>
+  </body>
+</html>
